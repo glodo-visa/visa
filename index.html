@@ -4,37 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLODO - Visa Consultation & Flight Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #18bc9c;
         }
         main {
-            padding: 20px;
+            padding: 60px 20px;
             text-align: center;
-        }
-        h1, h2 {
             color: #333;
         }
-        .content {
-            margin: 20px;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .service-box {
+            display: inline-block;
+            width: 45%;
+            margin: 15px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .service-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .service-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -42,16 +87,25 @@
 
     <!-- Header -->
     <header>
-        <h1>Welcome to GLODO</h1>
-        <p>Your trusted partner for Visa Consultation & Flight Ticket Booking</p>
+        <h1>GLODO</h1>
+        <p>Your Trusted Partner for Visa Consultation & Flight Ticket Booking</p>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Us</a>
+        </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <div class="content">
-            <h2>Our Services</h2>
-            <p>At GLODO, we specialize in providing expert visa consultation and helping you book flight tickets to your desired destinations.</p>
-            <p>Whether you are planning a vacation, business trip, or need assistance with visa applications, we've got you covered!</p>
+        <h2 id="services">Our Services</h2>
+        <div class="service-box">
+            <h3>Visa Consultation</h3>
+            <p>Get expert guidance and assistance with your visa application process for any destination around the world.</p>
+        </div>
+        <div class="service-box">
+            <h3>Flight Ticket Booking</h3>
+            <p>Book affordable flights easily with our user-friendly platform and enjoy a smooth travel experience.</p>
         </div>
     </main>
 
