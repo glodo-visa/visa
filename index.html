@@ -4,67 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLODO - Visa Consultation & Flight Booking</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Nunito', 'Roboto', sans-serif;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-image: url('https://source.unsplash.com/1600x900/?travel');
-            background-size: cover;
-            background-position: center;
+            background: #4A90E2;
             color: white;
             text-align: center;
-            padding: 80px 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 60px 20px;
             position: relative;
-            overflow: hidden;
-        }
-        header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
         }
         header h1 {
             margin: 0;
-            font-size: 4rem;
-            position: relative;
-            z-index: 1;
+            font-size: 3.5rem;
         }
         header p {
             font-size: 1.5rem;
             font-weight: 400;
             margin-top: 10px;
-            position: relative;
-            z-index: 1;
         }
         nav {
             display: flex;
             justify-content: center;
             padding: 20px 0;
-            background-color: #333;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: white;
+            color: #4A90E2;
             text-decoration: none;
             font-size: 1.2rem;
             margin: 0 15px;
             transition: color 0.3s ease, transform 0.3s ease;
         }
         nav a:hover {
-            color: #ffd700;
-            transform: scale(1.1);
+            color: #333;
+            transform: translateY(-3px);
         }
         main {
             padding: 60px 20px;
@@ -72,8 +53,8 @@
         }
         h2 {
             font-size: 2.5rem;
-            margin-bottom: 40px;
-            color: #3498db;
+            margin-bottom: 30px;
+            color: #4A90E2;
         }
         .service-container {
             display: flex;
@@ -86,38 +67,23 @@
             background-color: white;
             padding: 30px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
+            border-radius: 8px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
-        }
-        .service-box::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.1);
-            transition: background 0.3s ease;
         }
         .service-box:hover {
-            transform: scale(1.05);
+            transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-        .service-box:hover::after {
-            background: rgba(0, 0, 0, 0.3);
-        }
         .service-box h3 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: #3498db;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #4A90E2;
         }
         .service-box p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             line-height: 1.6;
-            color: #555;
+            color: #666;
         }
         footer {
             background: #333;
