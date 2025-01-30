@@ -4,50 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLODO - Visa Consultation & Flight Booking</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Poppins', 'Roboto', sans-serif;
-            background-color: #f7f7f7;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
         }
         header {
-            background: linear-gradient(to right, #2c3e50, #3498db);
+            background-image: url('https://source.unsplash.com/1600x900/?travel');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 50px 0;
             text-align: center;
+            padding: 80px 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
-            font-size: 3.5rem;
+            font-size: 4rem;
         }
         header p {
-            font-size: 1.4rem;
-            font-weight: 300;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 10px;
         }
         nav {
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 1.1rem;
-            margin: 0 20px;
+            font-size: 1.2rem;
+            margin: 0 15px;
             transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #18bc9c;
+            color: #ffd700;
         }
         main {
             padding: 60px 20px;
             text-align: center;
-            color: #333;
         }
         h2 {
             font-size: 2.5rem;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             color: #2c3e50;
         }
         .service-container {
@@ -57,26 +66,27 @@
             flex-wrap: wrap;
         }
         .service-box {
-            width: 45%;
+            width: 30%;
             background-color: white;
             padding: 30px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 12px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin-bottom: 30px;
         }
         .service-box:hover {
-            transform: translateY(-10px);
+            transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .service-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #3498db;
         }
         .service-box p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.6;
-            color: #666;
+            color: #555;
         }
         footer {
             background: #2c3e50;
@@ -93,12 +103,14 @@
     <header>
         <h1>GLODO</h1>
         <p>Your Trusted Partner for Visa Consultation & Flight Ticket Booking</p>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About Us</a>
-        </nav>
     </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About Us</a>
+    </nav>
 
     <!-- Main Content -->
     <main>
