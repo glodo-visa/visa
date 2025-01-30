@@ -21,21 +21,36 @@
             text-align: center;
             padding: 80px 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
         }
         header h1 {
             margin: 0;
             font-size: 4rem;
+            position: relative;
+            z-index: 1;
         }
         header p {
             font-size: 1.5rem;
             font-weight: 400;
             margin-top: 10px;
+            position: relative;
+            z-index: 1;
         }
         nav {
             display: flex;
             justify-content: center;
             padding: 20px 0;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: #333;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -45,10 +60,11 @@
             text-decoration: none;
             font-size: 1.2rem;
             margin: 0 15px;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
         nav a:hover {
             color: #ffd700;
+            transform: scale(1.1);
         }
         main {
             padding: 60px 20px;
@@ -57,7 +73,7 @@
         h2 {
             font-size: 2.5rem;
             margin-bottom: 40px;
-            color: #2c3e50;
+            color: #3498db;
         }
         .service-container {
             display: flex;
@@ -73,10 +89,25 @@
             border-radius: 12px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
         }
         .service-box:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .service-box:hover::after {
+            background: rgba(0, 0, 0, 0.3);
         }
         .service-box h3 {
             font-size: 2rem;
@@ -89,7 +120,7 @@
             color: #555;
         }
         footer {
-            background: #2c3e50;
+            background: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
