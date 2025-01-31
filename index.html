@@ -92,6 +92,9 @@
             justify-content: space-between;
             padding: 40px 20px;
             margin-top: 30px;
+            background: linear-gradient(135deg, #f4f4f4 25%, #efefef 25%, #efefef 50%, #f4f4f4 50%, #f4f4f4 75%, #efefef 75%, #efefef 100%);
+            background-size: 20px 20px;
+            border-radius: 8px;
         }
         .contact-box {
             width: 45%;
@@ -99,14 +102,14 @@
             padding: 20px;
         }
         .contact-box h3 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 20px;
             color: #4A90E2;
         }
         .contact-box p, .contact-box a {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.6;
-            color: #666;
+            color: #333;
         }
         .contact-icons {
             display: flex;
@@ -115,23 +118,12 @@
         }
         .contact-icons a {
             color: #4A90E2;
-            font-size: 1.5rem;
+            font-size: 2rem;
             transition: color 0.3s ease;
             text-decoration: none;
         }
         .contact-icons a:hover {
             color: #333;
-        }
-        .contact-box:nth-child(odd) {
-            background-color: #fafafa;
-        }
-        .contact-box:nth-child(even) {
-            background-color: #efefef;
-        }
-        .contact-box {
-            border-left: 5px solid #4A90E2;
-            border-right: 5px solid #4A90E2;
-            border-radius: 5px;
         }
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -145,12 +137,6 @@
             .contact-box {
                 width: 100%;
                 margin-bottom: 20px;
-            }
-            .contact-box {
-                border-left: none;
-                border-right: none;
-                border-top: 5px solid #4A90E2;
-                border-bottom: 5px solid #4A90E2;
             }
         }
     </style>
