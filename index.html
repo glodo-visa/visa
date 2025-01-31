@@ -1,129 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Visa Consultation Services</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<style>
-body {
-    font-family: 'Nunito', 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Consultation Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-header {
-    background: #4A90E2;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-    position: relative;
-}
+        header {
+            background: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 3.5rem;
-}
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+        }
 
-header p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 10px;
-}
+        header p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-main {
-    padding: 60px 20px;
-    text-align: center;
-}
+        main {
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #4A90E2;
-}
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #4A90E2;
+        }
 
-.countries-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+        .countries-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-.country-box {
-    width: 18.67%;
-    background-color: white;
-    padding: 10px;
-    min-height: 120px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        .country-box {
+            width: 18.67%;
+            background-color: white;
+            padding: 10px;
+            min-height: 120px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-.country-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+        .country-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
-.country-box img {
-    width: 40px;
-    height: auto;
-    margin-bottom: 5px;
-}
+        .country-box img {
+            width: 40px;
+            height: auto;
+            margin-bottom: 5px;
+        }
 
-.country-box h3 {
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: #4A90E2;
-    text-align: center;
-}
+        .country-box h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #4A90E2;
+            text-align: center;
+        }
 
-.enquire-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: #4A90E2;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+        .enquire-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            background-color: #4A90E2;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-.enquire-link:hover {
-    background-color: #333;
-    transform: translateY(-3px);
-    text-align: center;
-}
+        .enquire-link:hover {
+            background-color: #333;
+            transform: translateY(-3px);
+            text-align: center;
+        }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .country-box {
-        width: 25%;
-    }
-}
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .country-box {
+                width: 25%;
+            }
+        }
 
-@media (max-width: 768px) {
-    .country-box {
-        width: 40%;
-    }
-}
-</style>
+        @media (max-width: 768px) {
+            .country-box {
+                width: 40%;
+            }
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .breadcrumb li {
+            margin-right: 10px;
+        }
+
+        .breadcrumb li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .breadcrumb li a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb li::after {
+            content: ">>";
+            margin-left: 10px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+    </style>
 </head>
 <body>
 
@@ -197,6 +229,12 @@ h2 {
     </div>
     <a href="https://enquiry.glodo.in" class="enquire-link">Enquire Now</a>
 </main>
+
+<!-- Breadcrumb Navigation -->
+<ul class="breadcrumb">
+    <li><a href="homepage.html">Home</a></li>
+    <li>Visa Consultation Services</li>
+</ul>
 
 <!-- Footer -->
 <footer>
